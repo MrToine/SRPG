@@ -1,28 +1,22 @@
-<Dialog>
+<?xml version="1.0" encoding="UTF-8"?>
+<dialogs>
     <begin>
         <text>
-            <value>
-                Vous êtes tranquille dans votre lit. Votre mère entre subitement et vous explique qu'elle a perdu son anneau en rentrant du marché dans le village de l'autre côté de la forêt.
-            </value>
+            Vous êtes tranquille dans votre lit. Votre mère entre subitement et vous explique qu'elle a perdu son anneau en rentrant du marché dans le village de l'autre côté de la forêt.
         </text>
         <choice>
-            <value>
-                1 Lui dire que vous avez peur d'aller dehors...
-                2 Lui dire que la veille vous avez fais la fête et que vous êtes trop fatiguer pour sortir...
-            </value>
+            1 Lui dire que vous avez peur d'aller dehors...
+            2 Lui dire que la veille vous avez fais la fête et que vous êtes trop fatiguer pour sortir...
         </choice>
     </begin>
 
     <discussion_mere>
         <text>
-            <value>
-                La mère vous rétorque que vous êtes le seul "Homme" de la maison et que vous devez prendre votre rôle à coeur et vous repropose d'aller chercher l'anneau
-            </value>
+            La mère vous rétorque que vous êtes le seul "Homme" de la maison et que vous devez prendre votre rôle à coeur et vous repropose d'aller chercher l'anneau
         </text>
         <choice>
-            <value>
-                1 Lui dire que vous avez trop peur de nouveau
-                2 Lui dire que ça vous a regonfler a bloc et vous allez y aller
-            </value>
+            1 Lui dire que vous avez trop peur de nouveau
+            2 Lui dire que ça vous a regonfler a bloc et vous allez y aller
         </choice>
     </discussion_mere>
+</dialogs>

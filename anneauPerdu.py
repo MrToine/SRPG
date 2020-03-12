@@ -5,6 +5,7 @@
 from Heros import *
 from Enemy import *
 from Battle import *
+from Dialog import *
 
 def intertext():
     print("-"*60)
@@ -21,27 +22,23 @@ print("""
 ############################################################################################################################
 """)
 
+dialog = Dialog()
+
 begin = True
 while begin:
     main = True
     """Boucle principal du programme"""
-    print("""Vous êtes tranquille dans votre lit. Votre mère entre subitement et vous explique qu'elle a perdu son anneau en rentrant du marché dans le village de l'autre côté de la forêt. """)
-    choix_begin = int(input("""
-    1 Lui dire que vous avez peur d'aller dehors...
-    2 Lui dire que la veille vous avez fais la fête et que vous êtes trop fatiguer pour sortir...
-    """))
+    dialog.display("begin")
+    choix_begin = dialog.choice("begin")
     if choix_begin == 1:
-        discution_mere = True
+        discussion_mere = True
         intertext()
-        while discution_mere:
-            print("""La mère vous rétorque que vous êtes le seul "Homme" de la maison et que vous devez prendre votre rôle à coeur et vous repropose d'aller chercher l'anneau""")
-            choix_discution_mere = int(input("""
-            1 Lui dire que vous avez trop peur de nouveau
-            2 Lui dire que ça vous a regonfler a bloc et vous allez y aller
-            """))
-            if choix_discution_mere == 2:
+        while discussion_mere:
+            dialog.display("discussion_mere")
+            choix_discussion_mere = dialog.choice("discussion_mere")
+            if choix_discussion_mere == 2:
                 intertext()
-                discution_mere = False
+                discussion_mere = False
     if choix_begin == 2:
         intertext()
         print("La mère furieuse contre vous, vous met à la porte et vous avez perdu...")
