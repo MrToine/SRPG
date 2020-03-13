@@ -13,6 +13,6 @@
 <ul>
   <li>13/03/2020:<li>
   <ul>
-    <li>The program algorithm in english comming soon.<li>
+    <li>The program algorithm in english comming soon.</li>
   </ul>
 </ul>
